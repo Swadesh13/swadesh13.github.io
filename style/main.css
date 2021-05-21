@@ -1,0 +1,50 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.page {
+  background-color: #159957;
+  background-image: linear-gradient(120deg, #155799, #159957);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.center-content {
+  position: absolute;
+  top: 25%;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  color: beige;
+  height: 40vh;
+  width: 50vw;
+  font-family: "Noto Serif";
+  font-style: italic;
+  font-size: 3vw;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background-color: rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.1);
+}
+
+#snowflakeContainer {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  display: none;
+}
+
+.snowflake {
+  position: fixed;
+  background-color: #ccc;
+  user-select: none;
+  z-index: 1000;
+  pointer-events: none;
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+}
