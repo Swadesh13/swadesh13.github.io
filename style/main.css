@@ -17,18 +17,19 @@
   position: absolute;
   top: 25%;
   display: flex;
+  flex-direction: column;
   align-items: center;
   text-align: center;
   justify-content: center;
   color: beige;
-  height: 40vh;
-  width: 50vw;
+  height: 40vmin;
+  width: 60vmax;
   font-family: "Noto Serif";
   font-style: italic;
   font-size: 3vw;
   border: 1px solid rgba(0, 0, 0, 0.1);
   background-color: rgba(0, 0, 0, 0.1);
-  box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.3);
   z-index: 2;
 }
 
@@ -55,4 +56,42 @@
   z-index: 1;
   pointer-events: none;
   background-color: transparent;
+}
+
+/* DEMO-SPECIFIC STYLES */
+.typewriter {
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: 0.15em solid orange; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: 0.05em;
+  animation: typing 4s steps(30, end), blink-caret 0.3s step-end infinite,
+    disapper 0.1s 4.1s forwards;
+}
+
+/* The typing effect */
+@keyframes typing {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: orange;
+  }
+}
+
+@keyframes disapper {
+  100% {
+    border-color: transparent;
+  }
 }
