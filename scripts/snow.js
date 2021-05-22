@@ -15,16 +15,8 @@ var resetPosition = false;
 var enableAnimations = false;
 var reduceMotionQuery = matchMedia("(prefers-reduced-motion)");
 
-var wordslist = [
-  "css",
-  "html",
-  "javascript",
-  "c++",
-  "java",
-  "AI",
-  "ML",
-  "Data",
-];
+// Count of Floating Words
+var wordCount = new Object();
 
 // Handle animation accessibility preferences
 function setAccessibilityState() {
@@ -49,6 +41,16 @@ function setup() {
 }
 setup();
 
+function getWord() {
+  var text = wordslist[Math.round(Math.random() * wordslist.length)];
+  if (wordCount.hasOwnProperty(text)) {
+    if (!wordCount[text]) return text;
+    else return getWord();
+  }
+  wordCount[text] = true;
+  return text;
+}
+
 //
 // Constructor for our Snowflake object
 //
@@ -59,14 +61,16 @@ function Snowflake(element, speed, xPos, yPos) {
   this.xPos = xPos;
   this.yPos = yPos;
   this.scale = 1;
-  this.text = wordslist[0];
+  this.text = getWord();
+
+  this.element.textContent = this.text;
 
   // declare variables used for snowflake's motion
   this.counter = 0;
   this.sign = Math.random() < 0.5 ? 1 : -1;
 
   // setting an initial opacity and size for our snowflake
-  this.element.style.opacity = (0.1 + Math.random()) / 3;
+  this.element.style.opacity = (0.3 + Math.random()) / 3;
 }
 
 //
@@ -110,6 +114,7 @@ function generateSnowflakes() {
   // access our snowflake element's parent container
   var snowflakeContainer = originalSnowflake.parentNode;
   snowflakeContainer.style.display = "block";
+  snowflakeContainer.style.color = "white";
 
   // get our browser's size
   browserWidth = document.documentElement.clientWidth;
@@ -148,8 +153,7 @@ function generateSnowflakes() {
 function moveSnowflakes() {
   if (enableAnimations) {
     for (var i = 0; i < snowflakes.length; i++) {
-      var snowflake = snowflakes[i];
-      snowflake.update();
+      snowflakes[i].update();
     }
   }
 

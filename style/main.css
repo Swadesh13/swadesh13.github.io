@@ -29,6 +29,16 @@
   border: 1px solid rgba(0, 0, 0, 0.1);
   background-color: rgba(0, 0, 0, 0.1);
   box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.1);
+  z-index: 2;
+}
+
+.unselectable {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 #snowflakeContainer {
@@ -42,9 +52,7 @@
   position: fixed;
   background-color: #ccc;
   user-select: none;
-  z-index: 1000;
+  z-index: 1;
   pointer-events: none;
-  border-radius: 50%;
-  width: 10px;
-  height: 10px;
+  background-color: transparent;
 }
