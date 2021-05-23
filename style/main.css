@@ -11,6 +11,7 @@
   justify-content: center;
   align-items: center;
   height: 100vh;
+  overflow: hidden;
 }
 
 .center-content {
@@ -23,7 +24,7 @@
   justify-content: center;
   color: beige;
   height: 40vmin;
-  width: 60vmax;
+  /* width: 80%; */
   font-family: "Noto Serif";
   font-style: italic;
   font-size: 3vw;
@@ -31,7 +32,24 @@
   background-color: rgba(0, 0, 0, 0.1);
   box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.3);
   z-index: 2;
+  overflow: hidden;
+  min-width: 0;
 }
+
+@media (min-width: 0px) {
+  .center-content {
+    width: 80%;
+  }
+}
+/* @media (min-width:480px)  { smartphones, Android phones, landscape iPhone } */
+/* @media (min-width:600px)  { portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) } */
+@media (min-width: 801px) {
+  .center-content {
+    width: 65%;
+  }
+}
+/* @media (min-width:1025px) { big landscape tablets, laptops, and desktops } */
+/* @media (min-width:1281px) { hi-res laptops and desktops } */
 
 .unselectable {
   -webkit-touch-callout: none;
