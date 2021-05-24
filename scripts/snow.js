@@ -92,8 +92,13 @@ Snowflake.prototype.update = function () {
   );
 
   // if snowflake goes below the browser window, move it back to the top
-  if (this.yPos > browserHeight) {
+  if (
+    this.yPos > browserHeight ||
+    this.xPos > browserWidth * 1.5 ||
+    this.xPos < -browserWidth * 0.5
+  ) {
     this.yPos = -50;
+    this.xPos = getPosition(50, browserWidth);
   }
 };
 
