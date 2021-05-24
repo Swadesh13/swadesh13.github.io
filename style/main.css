@@ -23,7 +23,7 @@
   text-align: center;
   justify-content: center;
   color: beige;
-  height: 40vmin;
+  /* height: 40vmin; */
   /* width: 80%; */
   font-family: "Noto Serif";
   font-style: italic;
@@ -36,8 +36,13 @@
   min-width: 0;
 }
 
+.name {
+  margin: 10px;
+}
+
 @media (min-width: 300px) {
   .center-content {
+    height: 30vmin;
     width: 80%;
   }
 }
@@ -45,6 +50,7 @@
 /* @media (min-width:600px)  { portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) } */
 @media (min-width: 801px) {
   .center-content {
+    height: 40vmin;
     width: 65%;
   }
 }
@@ -83,8 +89,18 @@
   white-space: nowrap; /* Keeps the content on a single line */
   margin: 0 auto; /* Gives that scrolling effect as the typing happens */
   letter-spacing: 0.05em;
-  animation: typing 4s steps(30, end), blink-caret 0.3s step-end infinite,
-    disapper 0.1s 4.1s forwards;
+  opacity: 0;
+  animation: appear 0.1s 2.7s forwards, typing 4s 2.7s steps(30, end),
+    blink-caret 0.3s 2.7s step-end infinite, disapper 0.1s 7s forwards;
+}
+
+@keyframes appear {
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 /* The typing effect */
@@ -112,4 +128,39 @@
   100% {
     border-color: transparent;
   }
+}
+
+.ml5 .text-wrapper {
+  position: relative;
+  display: inline-block;
+  padding-top: 0.1em;
+  padding-right: 0.05em;
+  padding-bottom: 0.15em;
+  line-height: 1em;
+}
+
+.ml5 .line {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  height: 3px;
+  width: 100%;
+  background-color: #402d2d;
+  transform-origin: 0.5 0;
+}
+
+.ml5 .ampersand {
+  font-family: Baskerville, "EB Garamond", serif;
+  font-style: italic;
+  font-weight: 400;
+  width: 1em;
+  margin-right: -0.1em;
+  margin-left: -0.1em;
+}
+
+.ml5 .letters {
+  display: inline-block;
+  opacity: 0;
 }
