@@ -49,5 +49,5 @@ ml.timelines["ml5"] = anime
     opacity: 0,
     duration: 500,
     easing: "easeOutExpo",
-    delay: 500,
+    delay: 000,
   });
