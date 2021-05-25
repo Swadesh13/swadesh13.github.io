@@ -176,6 +176,11 @@
   background-color: #402d2d;
 }
 
+.ml5 .letters {
+  display: inline-block;
+  opacity: 0;
+}
+
 @media (min-width: 300px) {
   .center-content {
     height: 30vmin;
