@@ -41,13 +41,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100%;
-  width: 100%;
   color: rgba(255, 255, 255, 0.8);
   background: transparent;
   overflow: hidden;
   box-shadow: none;
-  border: none;
   letter-spacing: 0.15em;
 }
 
@@ -55,6 +52,7 @@
   box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.2),
     0 6px 20px 0 rgba(255, 255, 255, 0.19);
   background-color: rgba(255, 255, 255, 0.3);
+  color: rgba(2, 26, 2, 0.8);
 }
 
 .center-content {
@@ -97,6 +95,7 @@
   left: 0px;
   top: 0px;
   display: none;
+  font-size: 3vmin;
 }
 
 .snowflake {
