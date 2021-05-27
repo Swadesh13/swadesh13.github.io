@@ -4,6 +4,7 @@ const wordslist = [
   "CSS",
   "HTML",
   "Javascript",
+  "C",
   "C++",
   "Java",
   "AI",
@@ -18,6 +19,7 @@ const wordslist = [
   "Bool",
   "Cache",
   "Cloud",
+  "Code",
   "DBMS",
   "DNS",
   "Domain",
@@ -57,5 +59,6 @@ const wordslist = [
   "CSE",
   "SSH",
   "Thread",
-  //   "",
+  "HTTPS",
+  (new Date().getFullYear() >>> 0).toString(2),
 ];

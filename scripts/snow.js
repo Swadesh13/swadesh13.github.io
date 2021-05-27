@@ -51,13 +51,20 @@ function getWord() {
   return text;
 }
 
+function getSpeed() {
+  var speed;
+  if (browserHeight > browserWidth) speed = 10 + Math.random() * 20;
+  else speed = 10 + Math.random() * 40;
+  return speed;
+}
+
 //
 // Constructor for our Snowflake object
 //
-function Snowflake(element, speed, xPos, yPos) {
+function Snowflake(element, xPos, yPos) {
   // set initial snowflake properties
   this.element = element;
-  this.speed = speed;
+  this.speed = getSpeed();
   this.xPos = xPos;
   this.yPos = yPos;
   this.scale = 1;
@@ -99,6 +106,7 @@ Snowflake.prototype.update = function () {
   ) {
     this.yPos = -50;
     this.xPos = getPosition(50, browserWidth);
+    this.speed = getSpeed();
   }
 };
 
@@ -134,14 +142,10 @@ function generateSnowflakes() {
     // set our snowflake's initial position and related properties
     var initialXPos = getPosition(50, browserWidth);
     var initialYPos = getPosition(50, browserHeight);
-    var speed;
-    if (browserHeight > browserWidth) speed = 10 + Math.random() * 20;
-    else speed = 10 + Math.random() * 40;
 
     // create our Snowflake object
     var snowflakeObject = new Snowflake(
       snowflakeClone,
-      speed,
       initialXPos,
       initialYPos
     );
