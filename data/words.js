@@ -41,6 +41,7 @@ const wordslist = [
   "Deep Learning",
   "Tensorflow",
   "Keras",
+  "PyTorch",
   "sklearn",
   "Git",
   "GitHub",

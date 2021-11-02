@@ -7,8 +7,11 @@
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='icon' type='image/png' href='assets/sj.png'>
     <link rel='stylesheet' type='text/css' media='screen' href='style/main.css'>
-    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href='https://fonts.googleapis.com/css?family=Noto+Serif:700italic' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css2?family=Niconne&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
     <div class="page">
@@ -16,18 +19,18 @@
             <span class="snowflake"></span>
         </div>
 
-        <div class="navbar unselectable">
+        <div class="navbar unselectable" id="navbar">
             <div class="grid-container">
-                <a class="grid-item grid-text" href="#">
+                <a class="grid-item grid-text" id="about-me-link" href="#spacer">
                     About Me
                 </a>
                 <a class="grid-item grid-text" href="#">
                     Projects
                 </a>
-                <a class="grid-item grid-text" href="#">
+                <a class="grid-item grid-text" href="contact.html">
                     Contact
                 </a>
-                <a class="grid-item grid-text" href="#">
+                <a class="grid-item grid-text" href="./CV.html" target="_blank">
                     CV
                 </a>
             </div>
@@ -47,11 +50,50 @@
             <br>
             <div class="desig">
                 <h6 class="unselectable typewriter">    
-                    Developer | AI Enthusiast | CS Engineer
+                    Developer | AI Enthusiast | CS Student
                 </h6>
             </div>
         </div>
+        <a class="bounce" id="bounce" href="#spacer" role="button"></a>
     </div>
+    <div id="spacer"></div>
+    <div id="section2" class="section2">
+        <div id="aboutme">
+            <p class="unselectable aboutme">About Me</p>
+        </div>
+        <div class="myself-img unselectable">
+            <img alt="Myself" class="myself" src="./assets/sj-style-circle.png">
+            <div class="links">
+                <span class="fa-stack fa-1x">
+                    <a class="fa fa-github fa-stack-2x" href="https://github.com/Swadesh13"></a>
+                </span>
+                <a class="fa-stack fa-1x" href="https://twitter.com/swadeshjana13">
+                    <i class="fa fa-circle fa-stack-2x fa-twitter"></i>
+                    <i class="fa fa-twitter fa-stack-1x"></i>
+                </a>
+                <a class="fa-stack fa-1x" href="mailto:">
+                    <i class="fa fa-circle fa-stack-2x fa-envelope"></i>
+                    <i class="fa fa-envelope fa-stack-1x"></i>
+                </a>
+                <a class="fa-stack fa-1x" href="https://www.linkedin.com/in/swadeshjana">
+                    <i class="fa fa-circle fa-stack-2x fa-linkedin"></i>
+                    <i class="fa fa-linkedin fa-stack-1x"></i>
+                </a>
+                <a class="fa-stack fa-1x" href="https://join.skype.com/invite/vryvSdZfHteg">
+                    <i class="fa fa-circle fa-stack-2x fa-skype"></i>
+                    <i class="fa fa-skype fa-stack-1x"></i>
+                </a>
+            </div>
+        </div>
+        <div class="about-me-desc unselectable">
+            <p>Hi! I am a Computer Science student with an interest in research in Deep Learning, especially Computer Vision. I love to investigate and explore new innovations in technology and believe in patiently working on anything with an honest approach. My aim is always to know more than I did the previous day, which I have been doing by reading online articles, books and established papers. I have an aspiration to work in applied research where not only will I explore different application case studies but also develop new models, layers, techniques that are useful and efficient. </p><br>
+            <p>My hobbies include reading books, playing sports (tennis, cricket, etc.) and chess and also occasionally playing the bamboo flute.</p><br>
+            <p>Do check the Projects Section and my CV to know more about my work.</p>
+        </div>
+    </div>
+    <footer class="footer">
+        &copy; Copyright &nbsp; <span id="date"></span> &nbsp; | &nbsp; Swadesh Jana
+    </footer>
 </body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
@@ -59,4 +101,9 @@
 <script src="scripts/name_anime.js"></script>
 <script src="scripts/ripple.js"></script>
 <script src="data/words.js"></script>
+<script src="scripts/down-button.js"></script>
+<script>
+    var year = new Date().getFullYear();
+    document.getElementById("date").textContent = year;
+</script>
 </html>

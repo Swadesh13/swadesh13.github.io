@@ -6,7 +6,7 @@ var browserWidth;
 var browserHeight;
 
 // Specify the number of snowflakes you want visible
-var numberOfSnowflakes = 50;
+var numberOfSnowflakes = 60;
 
 // Flag to reset the position of the snowflakes
 var resetPosition = false;
@@ -100,7 +100,7 @@ Snowflake.prototype.update = function () {
 
   // if snowflake goes below the browser window, move it back to the top
   if (
-    this.yPos > browserHeight ||
+    this.yPos > screen.availHeight ||
     this.xPos > browserWidth * 1.5 ||
     this.xPos < -browserWidth * 0.5
   ) {
