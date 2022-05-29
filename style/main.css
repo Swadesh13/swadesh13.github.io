@@ -14,7 +14,7 @@
   overflow: hidden;
 }
 
-.navbar {
+.my-navbar {
   position: fixed;
   display: grid;
   z-index: 100;
@@ -29,12 +29,12 @@
 
 }
 
-.grid-container {
+.my-grid-container {
   display: grid;
   grid-template-columns: auto auto auto auto;
 }
 
-.grid-item {
+.my-grid-item {
   border: 1px solid rgba(0, 0, 0, 0.2);
   border-top: 0px;
   text-decoration: none;
@@ -43,7 +43,7 @@
   cursor: pointer;
 }
 
-.grid-text {
+.my-grid-text {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -55,13 +55,13 @@
   font-family: "Times New Roman", Times, serif;
 }
 
-.grid-item:hover {
+.my-grid-item:hover {
   box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.2), 0 6px 20px 0 rgba(255, 255, 255, 0.19);
   background-color: rgba(255, 255, 255, 0.3);
   color: rgba(2, 26, 2, 0.8);
 }
 
-.ripple {
+.my-ripple {
   width: auto;
   height: auto;
   border-radius: 50%;
@@ -71,11 +71,11 @@
   opacity: 1;
 }
 
-.rippleEffect {
-  animation: rippleDrop 0.5s linear;
+.my-rippleEffect {
+  animation: my-rippleDrop 0.5s linear;
 }
 
-@keyframes rippleDrop {
+@keyframes my-rippleDrop {
   100% {
     transform: scale(1.5);
     opacity: 0;
@@ -219,7 +219,7 @@
   .line {
     height: 2px;
   }
-  .grid-text {
+  .my-grid-text {
     font-size: 3.5vw;
   }
 }
@@ -234,7 +234,7 @@
   .line {
     height: 3px;
   }
-  .grid-text {
+  .my-grid-text {
     font-size: 1.5vw;
   }
 }
@@ -288,6 +288,7 @@
 
 .section2{
   margin: 5vh;
+  padding-top: 5vh;
   margin-right: 10vw;
   min-height: calc(85vh);
 }
@@ -301,7 +302,7 @@
 
 .myself-img{
   margin-left: 10vw;
-  margin-top: -5vh;
+  margin-top: -10vh;
   position: absolute;
 }
 
@@ -314,7 +315,6 @@
   margin-left: 40vw;
   margin-top: 2vw;
   text-align: justify;
-  /* font-family: 'Courier New', Courier, monospace; */
   font-family: monospace;
   line-height: 3vh;
 }

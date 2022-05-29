@@ -14,23 +14,23 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-    <div class="page">
+    <div class="page" id="1">
         <div id="snowflakeContainer">
             <span class="snowflake"></span>
         </div>
 
-        <div class="navbar unselectable" id="navbar">
-            <div class="grid-container">
-                <a class="grid-item grid-text" id="about-me-link" href="#spacer">
+        <div class="my-navbar unselectable" id="my-navbar">
+            <div class="my-grid-container">
+                <a class="my-grid-item my-grid-text" id="about-me-link" href="#section2">
                     About Me
                 </a>
-                <a class="grid-item grid-text">
+                <a class="my-grid-item my-grid-text" id="projects-link" href="projects.html">
                     Projects
                 </a>
-                <a class="grid-item grid-text" href="assets/Resume_latest.pdf" target="_blank">
-                    CV
+                <a class="my-grid-item my-grid-text" href="assets/Resume_latest.pdf" target="_blank">
+                    Resume
                 </a>
-                <a class="grid-item grid-text" href="https://github.com/Swadesh13"  target="_blank">
+                <a class="my-grid-item my-grid-text" href="https://github.com/Swadesh13"  target="_blank">
                     GitHub
                 </a>
             </div>
@@ -50,13 +50,12 @@
             <br>
             <div class="desig">
                 <h6 class="unselectable typewriter">    
-                    Developer | AI Enthusiast | CS Student
+                    CS Student | AI Enthusiast | Developer
                 </h6>
             </div>
         </div>
-        <a class="bounce" id="bounce" href="#spacer" role="button"></a>
+        <a class="bounce" id="bounce" href="#section2" role="button"></a>
     </div>
-    <div id="spacer"></div>
     <div id="section2" class="section2">
         <div id="aboutme">
             <p class="unselectable aboutme">About Me</p>
@@ -71,7 +70,7 @@
                     <i class="fa fa-circle fa-stack-2x fa-twitter"></i>
                     <i class="fa fa-twitter fa-stack-1x"></i>
                 </a>
-                <a class="fa-stack fa-1x" onclick="alert('Mail me: swadeshjana<at>gmail<dot>com');"/>
+                <a class="fa-stack fa-1x disabled" title="click to mail me" onclick="alert('My Email: swadeshjana<at>gmail<dot>com');"/>
                     <i class="fa fa-circle fa-stack-2x fa-envelope"></i>
                     <i class="fa fa-envelope fa-stack-1x"></i>
                 </a>
@@ -86,9 +85,9 @@
             </div>
         </div>
         <div class="about-me-desc unselectable">
-            <p>Hi! I am a Computer Science student with an interest in research in Deep Learning, especially Computer Vision. I love to investigate and explore new innovations in technology and believe in patiently working on anything with an honest approach. </p><br>
+            <p>Hi! I am a third year computer science undergraduate at Jadavpur University, Kolkata, India. I have an interest for research in Deep Learning, especially Computer Vision. I love to investigate and explore new innovations in technology and believe in a research-oriented mindset. </p><br>
             <p>My hobbies include reading books, playing sports (tennis, cricket, etc.) and chess and also occasionally playing the bamboo flute.</p><br>
-            <p>Do check the Projects Section and my CV to know more about my work.</p>
+            <p>Do check the Projects Section and my Resume to know more about my work.</p>
             <p>Feel free to contact me!</p>
         </div>
     </div>
@@ -100,7 +99,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
 <script src="scripts/snow.js"></script>
 <script src="scripts/name_anime.js"></script>
-<script src="scripts/ripple.js"></script>
+<script src="scripts/my-ripple.js"></script>
 <script src="data/words.js"></script>
 <script src="scripts/down-button.js"></script>
 <script>

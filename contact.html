@@ -1,104 +1,97 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <meta charset='utf-8'>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Swadesh Jana</title>
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='icon' type='image/png' href='assets/sj.png'>
-    <link rel='stylesheet' type='text/css' media='screen' href='style/main.css'>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <style>
-        .footer{
-            position: fixed;
-        }
-        .center-content{
-            font-family: "Noto Serif";
-            font-style: normal;
-            top: 10%;
-            height: 80vh;
-            width: 80vw;
-        }
-        .input-wrap, .input-wrap-2, .btn-wrapper{
-            opacity: 0.7;
-        }
-        .name, .email{
-            height: 6vh;
-            width: 30vw;
-            font-family: monospace, sans-serif;
-        }
-        .subject{
-            height: 6vh;
-            width: 50vw;
-            font-family: monospace, sans-serif;
-        } 
-        .message{
-            height: 30vh;
-            width: 50vw;
-            font-family: monospace, sans-serif;
-            padding: 1vmin;
-        }
-        .send{
-            padding: 5px;
-            border-radius: 5px;
-            font-family: monospace, sans-serif;
-        }
-    </style>
-</head>
-<body>
-    <div class="page">
-        <div id="snowflakeContainer">
-            <span class="snowflake"></span>
-        </div>
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<title>Swadesh Jana</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="icon" type="image/png" href="assets/sj.png" />
+		<link rel="stylesheet" type="text/css" media="screen" href="style/main.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<style>
+			.footer {
+				position: fixed;
+			}
+			.center-content {
+				font-family: "Noto Serif";
+				font-style: normal;
+				top: 10%;
+				height: 80vh;
+				width: 80vw;
+			}
+			.input-wrap,
+			.input-wrap-2,
+			.btn-wrapper {
+				opacity: 0.7;
+			}
+			.name,
+			.email {
+				height: 6vh;
+				width: 30vw;
+				font-family: monospace, sans-serif;
+			}
+			.subject {
+				height: 6vh;
+				width: 50vw;
+				font-family: monospace, sans-serif;
+			}
+			.message {
+				height: 30vh;
+				width: 50vw;
+				font-family: monospace, sans-serif;
+				padding: 1vmin;
+			}
+			.send {
+				padding: 5px;
+				border-radius: 5px;
+				font-family: monospace, sans-serif;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="page">
+			<div id="snowflakeContainer">
+				<span class="snowflake"></span>
+			</div>
 
-        <div class="navbar unselectable" id="navbar">
-            <div class="grid-container">
-                <a class="grid-item grid-text" id="about-me-link" href="./index.html">
-                    Home
-                </a>
-                <a class="grid-item grid-text" href="./index.html#spacer">
-                    About Me
-                </a>
-                <a class="grid-item grid-text" href="#">
-                    Projects
-                </a>
-                <a class="grid-item grid-text" href="./CV.html" target="_blank">
-                    CV
-                </a>
-            </div>
-        </div>
+			<div class="my-navbar unselectable" id="my-navbar">
+				<div class="my-grid-container">
+					<a class="my-grid-item my-grid-text" id="about-me-link" href="./index.html"> Home </a>
+					<a class="my-grid-item my-grid-text" href="./index.html#spacer"> About Me </a>
+					<a class="my-grid-item my-grid-text" href="#"> Projects </a>
+					<a class="my-grid-item my-grid-text" href="./CV.html" target="_blank"> Resume </a>
+				</div>
+			</div>
 
-        <div class="center-content">
-            <section class="contact">
-                <div class="unselectable">
-                    <h1>Contact Me</h1>
-                </div>
-                <form action="">
-                    <div class="input-wrap">
-                        <input type="text" class="name" placeholder="Your Name *" required>
-                        <input type="email" class="email" placeholder="Your Email *" required>
-                    </div>
-                    <div class="input-wrap-2">
-                        <input type="text" class="subject" placeholder="Subject *" required><br><br>
-                        <textarea class="message" type="text" placeholder="Type your message here *" required></textarea>
-                    </div>
-                    <div class="btn-wrapper">
-                        <button class="send">Send Message</button>
-                    </div>
-                </form>    
-            </section>
-        </div>
+			<div class="center-content">
+				<section class="contact">
+					<div class="unselectable">
+						<h1>Contact Me</h1>
+					</div>
+					<form action="">
+						<div class="input-wrap">
+							<input type="text" class="name" placeholder="Your Name *" required />
+							<input type="email" class="email" placeholder="Your Email *" required />
+						</div>
+						<div class="input-wrap-2">
+							<input type="text" class="subject" placeholder="Subject *" required /><br /><br />
+							<textarea class="message" type="text" placeholder="Type your message here *" required></textarea>
+						</div>
+						<div class="btn-wrapper">
+							<button class="send">Send Message</button>
+						</div>
+					</form>
+				</section>
+			</div>
 
-        <footer class="footer">
-            &copy; Copyright &nbsp; <span id="date"></span> &nbsp; | &nbsp; Swadesh Jana
-        </footer>
-    </div>
-</body>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
-<script src="scripts/ripple.js"></script>
-<script>
-    var year = new Date().getFullYear();
-    document.getElementById("date").textContent = year;
-</script>
+			<footer class="footer">&copy; Copyright &nbsp; <span id="date"></span> &nbsp; | &nbsp; Swadesh Jana</footer>
+		</div>
+	</body>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+	<script src="scripts/my-ripple.js"></script>
+	<script>
+		var year = new Date().getFullYear();
+		document.getElementById("date").textContent = year;
+	</script>
 </html>
