@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<title>News | Swadesh Jana</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link rel="stylesheet" type="text/css" media="screen" href="style/main.css" />
+		<link href="https://fonts.googleapis.com/css?family=Noto+Serif:700italic" rel="stylesheet" type="text/css" />
+		<link href="https://fonts.googleapis.com/css2?family=Niconne&display=swap" rel="stylesheet" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+		<link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/4.1.0/mdb.min.css" rel="stylesheet" />
+	</head>
+	<body>
+		<div class="my-navbar unselectable" id="my-navbar">
+			<div class="my-grid-container">
+				<a class="my-grid-item my-grid-text" id="home-link" href="index.html"> Home </a>
+				<a class="my-grid-item my-grid-text" href="news.html"> News </a>
+				<a class="my-grid-item my-grid-text" id="projects-link" href="projects.html"> Projects </a>
+				<a class="my-grid-item my-grid-text" href="assets/Resume_latest.pdf" target="_blank"> Resume </a>
+			</div>
+		</div>
+		<div class="p-5 text-center bg-image" id="top" style="background-image: linear-gradient(120deg, #155799, #159957); height: 350px; margin-bottom: 50px">
+			<div class="mask">
+				<div class="d-flex justify-content-center align-items-center h-100">
+					<div class="text-white">
+						<h1 class="mb-3 unselectable">News</h1>
+						<br />
+						<h4 class="mb-3">Important updates on my work</h4>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="container">
+			<!-- <p><b>[MM/YYYY]</b>&nbsp;<span>Text</span></p> -->
+			<p><b>[05/2022]</b>&nbsp;<span>Selected as Research Intern at TCS Innovation Labs for 2 months on model pruning and compression techniques</span></p>
+			<p><b>[04/2022]</b>&nbsp;<span>Mentor at Red Hen Lab for Google Summer of Code 2022.</span></p>
+			<p>
+				<b>[02/2022]</b>&nbsp;<span
+					>My work for Google Summer of Code 2021 @ Red Hen Lab got selected for presentation as part of symposium at International Society for Gesture Studies
+					(ISGS) 2022.</span
+				>
+			</p>
+			<p>
+				<b>[01/2022]</b>&nbsp;<span>Presented an idea on drone monitoring using transformers based on anticipative video transformers at MLDS conference 2021.</span>
+			</p>
+			<p>
+				<b>[11/2021]</b>&nbsp;<span
+					>I gave a talk on my work for Google Summer of Code 2021 @ Red Hen Lab at the Oxford IMCC.
+					<a href="https://youtu.be/L9Qm2FYPNnw" target="_blank">(Link)</a></span
+				>
+			</p>
+			<p><b>[04/2021]</b>&nbsp;<span>Got selected into Google Summer of Code 2021 @ Red Hen Lab</span></p>
+			<p>
+				<b>[08/2020]</b>&nbsp;<span
+					>Finished with rank 49 (Top 2%) in SIIM-ISIC Melanoma Classification challenge on <a href="https://www.kaggle.com/swadeshjana">Kaggle</a></span
+				>
+			</p>
+		</div>
+		<br />
+		<footer class="footer unselectable">&copy; Copyright &nbsp; <span id="date"></span> &nbsp; | &nbsp; Swadesh Jana</footer>
+	</body>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js" type="text/javascript"></script>
+	<script>
+		$(document).ready(() => {
+			var scroll_pos = 0;
+			$(document).scroll(() => {
+				scroll_pos = $(this).scrollTop();
+				if (scroll_pos > $("#top").height() + 50) {
+					$("#my-navbar").css("background-color", "rgba(0, 0, 0, 1)");
+				} else {
+					$("#my-navbar").css("background-color", "rgba(255, 255, 255, 0.1)");
+				}
+			});
+			$(document).scroll();
+		});
+
+		var year = new Date().getFullYear();
+		document.getElementById("date").textContent = year;
+	</script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/4.1.0/mdb.min.js"></script>
+	<script
+		src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js"
+		integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D"
+		crossorigin="anonymous"
+		async
+	></script>
+</html>

@@ -1,109 +1,112 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <meta charset='utf-8'>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Swadesh Jana</title>
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='icon' type='image/png' href='assets/sj.png'>
-    <link rel='stylesheet' type='text/css' media='screen' href='style/main.css'>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href='https://fonts.googleapis.com/css?family=Noto+Serif:700italic' rel='stylesheet' type='text/css'>
-    <link href="https://fonts.googleapis.com/css2?family=Niconne&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-</head>
-<body>
-    <div class="page" id="1">
-        <div id="snowflakeContainer">
-            <span class="snowflake"></span>
-        </div>
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<title>Home | Swadesh Jana</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="icon" type="image/png" href="assets/sj.png" />
+		<link rel="stylesheet" type="text/css" media="screen" href="style/main.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link href="https://fonts.googleapis.com/css?family=Noto+Serif:700italic" rel="stylesheet" type="text/css" />
+		<link href="https://fonts.googleapis.com/css2?family=Niconne&display=swap" rel="stylesheet" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=G-9SLDD10ZJY"></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag() {
+				dataLayer.push(arguments);
+			}
+			gtag("js", new Date());
+			gtag("config", "G-9SLDD10ZJY");
+		</script>
+	</head>
+	<body>
+		<div class="page" id="1">
+			<div id="snowflakeContainer">
+				<span class="snowflake"></span>
+			</div>
 
-        <div class="my-navbar unselectable" id="my-navbar">
-            <div class="my-grid-container">
-                <a class="my-grid-item my-grid-text" id="about-me-link" href="#section2">
-                    About Me
-                </a>
-                <a class="my-grid-item my-grid-text" id="projects-link" href="projects.html">
-                    Projects
-                </a>
-                <a class="my-grid-item my-grid-text" href="assets/Resume_latest.pdf" target="_blank">
-                    Resume
-                </a>
-                <a class="my-grid-item my-grid-text" href="https://github.com/Swadesh13"  target="_blank">
-                    GitHub
-                </a>
-            </div>
-        </div>
-        
-        <div class="center-content">
-            <div class="name">
-                <h1 class="ml5 unselectable">
-                    <span class="text-wrapper">
-                        <span class="line"></span>
-                        <span class="letters letters-left">Swadesh</span>
-                        <span class="letters letters-right">&nbsp;&nbsp;Jana</span>
-                        <span class="line"></span>
-                    </span>
-                </h1>
-            </div>
-            <br>
-            <div class="desig">
-                <h6 class="unselectable typewriter">    
-                    CS Student | AI Enthusiast | Developer
-                </h6>
-            </div>
-        </div>
-        <a class="bounce" id="bounce" href="#section2" role="button"></a>
-    </div>
-    <div id="section2" class="section2">
-        <div id="aboutme">
-            <p class="unselectable aboutme">About Me</p>
-        </div>
-        <div class="myself-img unselectable">
-            <img alt="Myself" class="myself" src="./assets/sj-style-circle.png">
-            <div class="links">
-                <span class="fa-stack fa-1x">
-                    <a class="fa fa-github fa-stack-2x" href="https://github.com/Swadesh13"></a>
-                </span>
-                <a class="fa-stack fa-1x" href="https://twitter.com/swadeshjana13">
-                    <i class="fa fa-circle fa-stack-2x fa-twitter"></i>
-                    <i class="fa fa-twitter fa-stack-1x"></i>
-                </a>
-                <a class="fa-stack fa-1x disabled" title="click to mail me" onclick="alert('My Email: swadeshjana<at>gmail<dot>com');"/>
-                    <i class="fa fa-circle fa-stack-2x fa-envelope"></i>
-                    <i class="fa fa-envelope fa-stack-1x"></i>
-                </a>
-                <a class="fa-stack fa-1x" href="https://www.linkedin.com/in/swadeshjana">
-                    <i class="fa fa-circle fa-stack-2x fa-linkedin"></i>
-                    <i class="fa fa-linkedin fa-stack-1x"></i>
-                </a>
-                <a class="fa-stack fa-1x" href="https://join.skype.com/invite/vryvSdZfHteg">
-                    <i class="fa fa-circle fa-stack-2x fa-skype"></i>
-                    <i class="fa fa-skype fa-stack-1x"></i>
-                </a>
-            </div>
-        </div>
-        <div class="about-me-desc unselectable">
-            <p>Hi! I am a third year computer science undergraduate at Jadavpur University, Kolkata, India. I have an interest for research in Deep Learning, especially Computer Vision. I love to investigate and explore new innovations in technology and believe in a research-oriented mindset. </p><br>
-            <p>My hobbies include reading books, playing sports (tennis, cricket, etc.) and chess and also occasionally playing the bamboo flute.</p><br>
-            <p>Do check the Projects Section and my Resume to know more about my work.</p>
-            <p>Feel free to contact me!</p>
-        </div>
-    </div>
-    <footer class="footer unselectable">
-        &copy; Copyright &nbsp; <span id="date"></span> &nbsp; | &nbsp; Swadesh Jana
-    </footer>
-</body>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
-<script src="scripts/snow.js"></script>
-<script src="scripts/name_anime.js"></script>
-<script src="scripts/my-ripple.js"></script>
-<script src="data/words.js"></script>
-<script src="scripts/down-button.js"></script>
-<script>
-    var year = new Date().getFullYear();
-    document.getElementById("date").textContent = year;
-</script>
+			<div class="my-navbar unselectable" id="my-navbar">
+				<div class="my-grid-container">
+					<a class="my-grid-item my-grid-text" id="about-me-link" href="#section2"> About Me </a>
+					<a class="my-grid-item my-grid-text" href="news.html"> News </a>
+					<a class="my-grid-item my-grid-text" id="projects-link" href="projects.html"> Projects </a>
+					<a class="my-grid-item my-grid-text" href="assets/Resume_latest.pdf" target="_blank"> Resume </a>
+				</div>
+			</div>
+
+			<div class="center-content">
+				<div class="name">
+					<h1 class="ml5 unselectable">
+						<span class="text-wrapper">
+							<span class="line"></span>
+							<span class="letters letters-left">Swadesh</span>
+							<span class="letters letters-right">&nbsp;&nbsp;Jana</span>
+							<span class="line"></span>
+						</span>
+					</h1>
+				</div>
+				<br />
+				<div class="desig">
+					<h6 class="unselectable typewriter">CS Student | AI Enthusiast | Developer</h6>
+				</div>
+			</div>
+			<a class="bounce" id="bounce" href="#section2" role="button"></a>
+		</div>
+		<div id="section2" class="section2">
+			<div id="aboutme">
+				<p class="unselectable aboutme">About Me</p>
+			</div>
+			<div class="myself-img unselectable">
+				<img alt="Myself" class="myself" src="./assets/sj-style-circle.png" />
+				<div class="links">
+					<span class="fa-stack fa-1x">
+						<a class="fa fa-github fa-stack-2x" href="https://github.com/Swadesh13"></a>
+					</span>
+					<a class="fa-stack fa-1x" href="https://twitter.com/swadeshjana13">
+						<i class="fa fa-circle fa-stack-2x fa-twitter"></i>
+						<i class="fa fa-twitter fa-stack-1x"></i>
+					</a>
+					<a class="fa-stack fa-1x disabled" title="click to mail me" onclick="alert('My Email: swadeshjana<at>gmail<dot>com');">
+						<i class="fa fa-circle fa-stack-2x fa-envelope"></i>
+						<i class="fa fa-envelope fa-stack-1x"></i>
+					</a>
+					<a class="fa-stack fa-1x" href="https://www.linkedin.com/in/swadeshjana">
+						<i class="fa fa-circle fa-stack-2x fa-linkedin"></i>
+						<i class="fa fa-linkedin fa-stack-1x"></i>
+					</a>
+					<a class="fa-stack fa-1x" href="https://join.skype.com/invite/vryvSdZfHteg">
+						<i class="fa fa-circle fa-stack-2x fa-skype"></i>
+						<i class="fa fa-skype fa-stack-1x"></i>
+					</a>
+				</div>
+			</div>
+			<div class="about-me-desc unselectable">
+				<p>
+					Hi! I am a third year computer science undergraduate at Jadavpur University, Kolkata, India. I have an interest for research in Deep Learning, especially
+					Computer Vision. I love to investigate and explore new innovations in technology and believe in a research-oriented mindset.
+				</p>
+				<br />
+				<p>My hobbies include reading books, playing sports (tennis, cricket, etc.) and chess and also occasionally playing the bamboo flute.</p>
+				<br />
+				<p>Do check the Projects Section and my Resume to know more about my work.</p>
+				<p>Feel free to contact me!</p>
+			</div>
+		</div>
+		<footer class="footer unselectable">&copy; Copyright &nbsp; <span id="date"></span> &nbsp; | &nbsp; Swadesh Jana</footer>
+	</body>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+	<script src="scripts/snow.js"></script>
+	<script src="scripts/name_anime.js"></script>
+	<script src="scripts/my-ripple.js"></script>
+	<script src="data/words.js"></script>
+	<script src="scripts/down-button.js"></script>
+	<script>
+		var year = new Date().getFullYear();
+		document.getElementById("date").textContent = year;
+	</script>
 </html>
