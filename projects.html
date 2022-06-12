@@ -490,11 +490,15 @@
 		async
 	></script>
 	<script>
-		async function x() {
+		window.onload = async function () {
 			const delay = (ms) => new Promise((res) => setTimeout(res, ms));
-			await delay(1000);
-			$(".row").masonry("reloadItems");
-		}
-		x();
+			await delay(100);
+			if (window.localStorage) {
+				if (!localStorage.getItem("firstLoad")) {
+					localStorage["firstLoad"] = true;
+					window.location.reload();
+				} else localStorage.removeItem("firstLoad");
+			}
+		};
 	</script>
 </html>
