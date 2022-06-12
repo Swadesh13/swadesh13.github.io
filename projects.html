@@ -12,6 +12,15 @@
 		<link href="https://fonts.googleapis.com/css2?family=Niconne&display=swap" rel="stylesheet" />
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
 		<link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/4.1.0/mdb.min.css" rel="stylesheet" />
+		<script async src="https://www.googletagmanager.com/gtag/js?id=G-9SLDD10ZJY"></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag() {
+				dataLayer.push(arguments);
+			}
+			gtag("js", new Date());
+			gtag("config", "G-9SLDD10ZJY");
+		</script>
 	</head>
 	<body>
 		<div class="my-navbar unselectable" id="my-navbar">
@@ -34,7 +43,7 @@
 		</div>
 		<div class="container">
 			<section class="text-center">
-				<div class="row" data-masonry='{"percentPosition": true }'>
+				<div class="row" id="masonry-grid" data-masonry='{"percentPosition": true }'>
 					<div class="col-lg-4 col-md-12 mb-4">
 						<div class="card">
 							<div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
@@ -480,4 +489,12 @@
 		crossorigin="anonymous"
 		async
 	></script>
+	<script>
+		async function x() {
+			const delay = (ms) => new Promise((res) => setTimeout(res, ms));
+			await delay(1000);
+			$(".row").masonry("reloadItems");
+		}
+		x();
+	</script>
 </html>
