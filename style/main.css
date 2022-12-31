@@ -300,10 +300,17 @@
   padding-top: 5vh;
 }
 
+.myname{
+  font-family: 'Time New Roman';
+  font-size: 2vmax;
+  padding-top: 5vh;
+}
+
 .myself-img{
   margin-left: 10vw;
-  margin-top: -10vh;
+  margin-top: -15vh;
   position: absolute;
+  text-align: center
 }
 
 .myself{
@@ -321,7 +328,7 @@
 
 .links{
   width: fit-content;
-  margin-top: 10vh;
+  margin-top: 7vh;
   margin-left: -5vw;
   position: absolute;
 }
